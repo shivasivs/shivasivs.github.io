@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Sivaranjan T, a REVA University CSE student, keeps notes on coursework and small programming projects.">
+  <title>Sivaranjan T — Project notebook</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f2eb;
+      --paper: #fffdf8;
+      --text: #222923;
+      --muted: #5d665e;
+      --accent: #9b4d32;
+      --line: #d9d4ca;
+      --max: 900px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:hover { color: #71351f; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .wrap { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+    header { padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { color: var(--text); font-weight: 700; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+    nav a { color: var(--muted); font-size: .92rem; text-decoration: none; }
+    .hero { padding: clamp(3rem, 7vw, 5.4rem) 0 2.7rem; }
+    .eyebrow { color: var(--muted); font-size: .9rem; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+    h1 { max-width: 720px; margin: .35rem 0 .8rem; font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.12; letter-spacing: -.035em; }
+    .hero p { max-width: 650px; color: var(--muted); font-size: 1.08rem; }
+    .hero .profile-links { margin-top: 1.3rem; font-size: .96rem; }
+    section { padding: 1.8rem 0; scroll-margin-top: 1.5rem; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 .85rem; font-size: clamp(1.55rem, 3.5vw, 2rem); }
+    .intro { max-width: 740px; color: var(--muted); }
+    .project-list { margin: 0; padding: 0; list-style: none; }
+    .project-list li { display: grid; grid-template-columns: minmax(170px, .75fr) 1.5fr; gap: 1.2rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+    .project-list li:first-child { border-top: 0; }
+    .project-list h3 { margin: 0; font-size: 1rem; }
+    .project-list p { margin: 0; color: var(--muted); }
+    .skill-list { margin: .3rem 0 0; padding-left: 1.2rem; color: var(--muted); }
+    .journal-note { max-width: 720px; padding: 1rem 1.2rem; background: var(--paper); border-left: 3px solid var(--accent); }
+    .journal-note p { margin: .2rem 0 0; color: var(--muted); }
+    .contact p { margin: .25rem 0; }
+    footer { margin-top: 2.2rem; padding: 1.2rem 0 2rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .9rem; }
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      nav { gap: .45rem 1rem; }
+      .project-list li { grid-template-columns: 1fr; gap: .2rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Sivaranjan T</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#journal">Learning</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top" class="wrap">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="eyebrow">B.Tech CSE student · REVA University · Expected 2029</div>
+      <h1 id="intro-title">Hi, I’m Sivaranjan.</h1>
+      <p>This is where I keep the projects I make for class and the coding practice I’m working through. I’m still learning, so I use the notes and repos to see what I understand and what I need to try again.</p>
+      <p class="profile-links"><a href="https://github.com/shivasivs">GitHub</a> · <a href="https://www.linkedin.com/in/sivaranjan-t/">LinkedIn</a></p>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p class="intro">I’m in my third semester at REVA University. So far, most of my work has been small programs and practice repositories: starting with Hello World, then trying pair programming, coding problems, and a text editor in C. I’m interested in software engineering and would like to learn more about backend development.</p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects & practice</h2>
+      <ul class="project-list">
+        <li><h3><a href="https://github.com/shivasivs/Hello">Hello World and pair programming</a></h3><p>A small C++ starter project. The README also has a note about adding <code>greet()</code> with Live Share and what I learned from the session. <a href="https://github.com/shivasivs/Hello#collaboration-log">Read that note</a>.</p></li>
+        <li><h3><a href="https://github.com/shivasivs/leetcode-solutions">LeetCode practice</a></h3><p>C++ practice problems grouped by topic, with explanations and a progress tracker.</p></li>
+        <li><h3><a href="https://github.com/shivasivs/HackerRank-3rdSem-Portfolio">HackerRank practice</a></h3><p>A Python problem-solving portfolio for my third-semester work.</p></li>
+        <li><h3><a href="https://github.com/shivasivs/Simple-Line-Editor">Simple line editor</a></h3><p>A terminal text editor in C for creating, editing, saving, loading, and searching lines.</p></li>
+        <li><h3><a href="https://github.com/shivasivs/Activity-1-Dev-Environment-Setup">Development setup</a></h3><p>The repository from my early environment setup activity.</p></li>
+      </ul>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills I’m building</h2>
+      <p class="intro">Right now I’m spending time on:</p>
+      <ul class="skill-list"><li>C and C++ fundamentals</li><li>Data structures and algorithms</li><li>Python problem practice</li><li>Git and GitHub</li><li>DBMS and SQL basics</li></ul>
+    </section>
+
+    <section id="journal" aria-labelledby="journal-title">
+      <h2 id="journal-title">Learning journal</h2>
+      <div class="journal-note"><strong>A note from this semester</strong><p>I’ve been organizing practice work with local test cases and short explanations. Writing down the approach helps me notice where my reasoning is unclear, not just whether the final answer works.</p></div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Find me</h2>
+      <p><a href="https://github.com/shivasivs">GitHub: github.com/shivasivs</a></p>
+      <p><a href="https://www.linkedin.com/in/sivaranjan-t/">LinkedIn profile</a></p>
+    </section>
+  </main>
+  <footer><div class="wrap">Sivaranjan T · REVA University</div></footer>
+</body>
+</html>
